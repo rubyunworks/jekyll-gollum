@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'hyde'
+
+case ARGV.first
+when 'initialize', 'init'
+  Smeagol::CLI.init(ARGV)
+when 'serve', 'preview'
+  Smeagol::CLI.serve(ARGV)
+when 'update', 'up'
+  Smeagol::CLI.update(ARGV)
+when 'transform', 'trans'
+  Smeagol::CLI.transform(ARGV)
+else
+  Smeagol::CLI.help(ARGV)
+end
+
