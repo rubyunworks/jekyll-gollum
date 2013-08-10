@@ -35,11 +35,16 @@ tells it where to find the files to be transformed. In our example
 we use `_wiki` because we want to it to contain a cloned Gollum wiki
 repository. If no entry is given the default is `_trans`. The `page_yaml`
 and `post_yaml` entries specify the YAML front matter to add to pages
-and posts respecively. If not given the default is `layout: default`.
+and posts respecively. If not given the defaults are as shown above,
+`page` and `post`.
 
-Jekyll transform distinguishes posts from pages simply the the name of
-the file starting with a date. It does not matter where they are located
+Jekyll transform distinguishes posts from pages simply soley by the name
+of the file starting with a date. It does not matter where they are located
 in the directory. And pages will keep their relative paths.
+
+Drafts are not yet supported, but that will be added in future release.
+In the mean time you can still set `future: false` and date your drafts
+far in the future.
 
 
 ## Tips
