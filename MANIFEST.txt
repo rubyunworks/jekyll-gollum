@@ -1,11 +1,7 @@
 #!mast .index .yardopts bin demo lib spec test vendor/grit/lib *.md *.rdoc *.txt
 .index
 bin/hyde
-lib/hyde/cli.rb
-lib/hyde/config.rb
-lib/hyde/console.rb
-lib/hyde/transform.rb
-lib/hyde.rb
+lib/jekyll-transform.rb
 README.md
 HISTORY.md
 LICENSE.txt

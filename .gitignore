@@ -7,5 +7,7 @@ wiki/
 tmp/
 vendor/
 work/sandbox
+work/backups
+work/deprecated
 DEMO.md
 Gemfile.lock

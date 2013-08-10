@@ -1,54 +1,45 @@
-# Hyde
+# Jekyll Transform
 
-## Transform Your Wiki into a Jykell site
-
+**Transform your documents into a Jekyll site!**
 
 ## About
 
-Hyde will transform your Gollum wiki into a Jykell site.
+Jekyll Transform allows Jekyll to use any directory as a source of markup
+documents in the construction of a Jekyll site. The documents with the
+directory do not need YAML front matter. A good example how this can be
+useful is in taking a Gollum wiki and using its contants for create a Jekyll
+web-site.
 
 
 ## Usage
 
-You should first layout your Jekyll site according to its documentation.
-When that is in place then you can initialize Hyde with the URL of
-your wiki's git repository. First `cd` into you site directory, then:
+Jekyll Transform works as a Jekyll plugin.
 
-    $ hyde init git@github.com:rubyworks/smeagol.wiki.git
+You first need to have a Jekyll setup in accordance with Jekyll's specification.
+With a Jekyll site in place you simply need to add a `transform.rb` file to
+your site's `_plugins` directory containing:
 
-This will clone the repository to the `_wiki` directory and will
-also add `_wiki/` to your `.gitignore` file if one exists.
+    require `jekyll-transform'
 
-With the wiki cloned you can now transfor it into a Jykell site with:
+Then in you `_config.yml` file add:
 
-    $ hyde trans
+    transform:
+      folder: '_wiki'
+      page_yaml:
+        layout: page
+      post_yaml:
+        layout: post
 
-By default Hyde uses whatever branch, tag or reference point the wiki
-repository happens to have checked out. If you wish to use a specific
-branch, tag or reference point, add it to the command. E.g.
+Change the confgiuration to meet your needs. The `folder` settings
+tells it where to find the files to be transformed. In our example
+we use `_wiki` because we want to it to contain a cloned Gollum wiki
+repository. If not given the default is `_trans`. The `page_yaml`
+and `post_yaml` entries specify the YAML front matter to add to pages
+and posts respecively. If not given the default is `layout: default`.
 
-    $ hyde trans v1308
-
-Note, the current repo needs to be in a clean state for this to work.
-
-If you you are using your wiki as the main source of content for your
-site you can use the `--sync` opition to ensure correspondance between
-the site and the wiki. This will prevent any possibility of duplication
-when a wiki file is renamed. But you must be careful with it b/c it
-will delete any site file that has not been specifically configured to
-be preserved via `.hydeignore`.
-
-
-## Caveats
-
-Hyde is *very* simplistic at this point. If simply copies the files
-to the appropriate places in the Jykell's site according to some basic
-critera. That's it. This means if you have renamed a file in the wiki
-you also need to delete that file from the site directory.
-
-In the future we hope to make it a bit more intelligent. For instance, 
-it would be nice if can look at the changes made to the wiki and ascertain
-when files have been renamed.
+Jekyll transform distinguishes posts from pages simply the the name of
+the file starting with a date. It does not matter where they are located
+in the directory. Pages will keep their relative paths.
 
 
 ## Copyrights

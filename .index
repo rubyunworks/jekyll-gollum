@@ -13,13 +13,13 @@ conflicts: []
 alternatives: []
 resources:
 - type: home
-  uri: http://rubyworks.github.com/hyde
+  uri: http://rubyworks.github.com/jekyll-transform
   label: Homepage
 - type: code
-  uri: http://github.com/rubyworks/hyde
+  uri: http://github.com/rubyworks/jekyll-transform
   label: Source Code
 - type: docs
-  uri: http://rubydoc.info/gems/hyde/frames
+  uri: http://rubydoc.info/gems/jekyll-transform/frames
   label: Documentation
 - type: mail
   uri: http://groups.google.com/groups/rubyworks-mailinglist
@@ -27,7 +27,7 @@ resources:
 repositories:
 - name: upstream
   scm: git
-  uri: git://github.com/rubyworks/hyde.git
+  uri: git://github.com/rubyworks/kekyll-transform.git
 categories: []
 copyrights:
 - holder: Rubyworks
@@ -37,10 +37,11 @@ customs: []
 paths:
   lib:
   - lib
-name: hyde
-title: Hyde
-summary: Wiki Cum Website
+name: jekyll-transform
+title: Jekyll Transform
+summary: Transform any directory into a website!
 created: '2013-08-09'
-description: Hyde transform your Gollum wiki into a Jykell managed website.
+description: "Jykell Transform converts transforms external sources \ninto a Jykell
+  managable material."
 version: 0.1.0
 date: '2013-08-09'
