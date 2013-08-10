@@ -1,6 +1,5 @@
 #!mast .index .yardopts bin demo lib spec test vendor/grit/lib *.md *.rdoc *.txt
 .index
-bin/hyde
 lib/jekyll-transform.rb
 README.md
 HISTORY.md
