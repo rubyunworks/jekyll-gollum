@@ -1,13 +1,3 @@
 ---
 - jekyll
-#- grit 2.5+
-#- gollum 2.5+
-#- github-markdown 0.5+ (compiled)
-#- rack 1.5+
-#- sinatra 1.4+
-#- rubypython 0.5+
-#- rubytest-cli (test)
-#- citron       (test)
-#- ae           (test)
-#- rack-test    (test)
 
