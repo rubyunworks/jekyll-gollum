@@ -43,5 +43,5 @@ summary: Transform any directory into a website!
 created: '2013-08-09'
 description: "Jykell Transform converts transforms external sources \ninto a Jykell
   managable material."
-version: 0.1.0
-date: '2013-08-09'
+version: 0.1.2
+date: '2013-11-25'
