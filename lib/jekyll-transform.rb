@@ -1,7 +1,7 @@
 module Jekyll
 
   class TransformPage < Page
-    alias read_yaml_front_matter read_yaml 
+    #alias read_yaml_front_matter read_yaml 
 
     # Read the YAML frontmatter.
     #
@@ -12,7 +12,7 @@ module Jekyll
     def read_yaml(base, name)
       begin
         text = File.read(File.join(base, name))
-        data = (site.config['transform'] || {})['page_yaml'] || {'layout'=>'post'}
+        data = (site.config['transform'] || {})['page_yaml'] || {'layout'=>'default'}
 
         if text =~ /<!--\s+---\s*\n(.*?)^-->\s*$\n?/m
           text.delete($0)
@@ -45,7 +45,7 @@ module Jekyll
     def read_yaml(base, name)
       begin
         text = File.read(File.join(base, name))
-        data = (site.config['transform'] || {})['post_yaml'] || {'layout'=>'default'}
+        data = (site.config['transform'] || {})['post_yaml'] || {'layout'=>'post'}
 
         if text =~ /<!--\s+---\s*\n(.*?)^-->\s*$\n?/m
           text.delete($0)
