@@ -1,8 +1,11 @@
 #!mast .index .yardopts bin demo lib spec test vendor/grit/lib *.md *.rdoc *.txt
 .index
-lib/jekyll-transform/gollum.rb
-lib/jekyll-transform/summary.rb
-lib/jekyll-transform.rb
+lib/jekyll-gollum/convertible.rb
+lib/jekyll-gollum/generator.rb
+lib/jekyll-gollum/page.rb
+lib/jekyll-gollum/post.rb
+lib/jekyll-gollum/summary.rb
+lib/jekyll-gollum.rb
 README.md
 HISTORY.md
 LICENSE.txt

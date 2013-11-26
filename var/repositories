@@ -1,2 +1,2 @@
 ---
-upstream: git://github.com/rubyworks/kekyll-transform.git
+upstream: git://github.com/rubyworks/jekyll-gollum.git

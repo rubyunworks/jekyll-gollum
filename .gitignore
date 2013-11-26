@@ -11,3 +11,4 @@ work/backups
 work/deprecated
 DEMO.md
 Gemfile.lock
+*.gem

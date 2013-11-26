@@ -40,8 +40,7 @@ module Jekyll
       doc = full_document.dup
       doc.gsub!(/```(.*?)\n(.*?)\n```/m) do |match|
         #"```#{$1}\n{% raw %}\n#{$2}\n{% endraw %}\n```"
-        #"{% highlight #{$1} %}\n#{$2}\n{% endhighlight %}\n"
-        "```#{$1}\n#{$2}\n```"
+        "{% highlight #{$1} %}\n#{$2}\n{% endhighlight %}\n"
       end
       return doc
     end

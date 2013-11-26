@@ -13,13 +13,13 @@ conflicts: []
 alternatives: []
 resources:
 - type: home
-  uri: http://rubyworks.github.com/jekyll-transform
+  uri: http://rubyworks.github.com/jekyll-gollum
   label: Homepage
 - type: code
-  uri: http://github.com/rubyworks/jekyll-transform
+  uri: http://github.com/rubyworks/jekyll-gollum
   label: Source Code
 - type: docs
-  uri: http://rubydoc.info/gems/jekyll-transform/frames
+  uri: http://rubydoc.info/gems/jekyll-gollum/frames
   label: Documentation
 - type: mail
   uri: http://groups.google.com/groups/rubyworks-mailinglist
@@ -27,7 +27,7 @@ resources:
 repositories:
 - name: upstream
   scm: git
-  uri: git://github.com/rubyworks/kekyll-transform.git
+  uri: git://github.com/rubyworks/jekyll-gollum.git
 categories: []
 copyrights:
 - holder: Rubyworks
@@ -37,11 +37,12 @@ customs: []
 paths:
   lib:
   - lib
-name: jekyll-transform
-title: Jekyll Transform
-summary: Transform any directory into a website!
+name: jekyll-gollum
+title: Jekyll Gollum
+summary: Transform a Gollum Wiki into a Website!
 created: '2013-08-09'
-description: "Jykell Transform converts transforms external sources \ninto a Jykell
-  managable material."
-version: 0.1.2
-date: '2013-11-25'
+description: |-
+  Jekyll Gollum is a plugin for Jekyll that allows Gollum Wikis to be transformed
+  into a Jekyll-managed websiste.
+version: 0.2.0
+date: '2013-11-26'
