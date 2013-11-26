@@ -1,8 +1,8 @@
-# Jekyll Gollum
+# [Jekyll Gollum](http://rubyworks.github.com/jekyll-gollum)
 
 **Transform your Gollum Wiki into a Jekyll Website!**
 
-## About
+## [About](#about)
 
 Jekyll Gollum allows Jekyll to use a Gollum Wiki as a source for markup
 documents in the construction of a website. The documents within the
@@ -10,7 +10,7 @@ wiki **do not need YAML front matter**, but can still provide it via
 an HTML bottom-comment.
 
 
-## Usage
+## [Usage](#usage)
 
 Jekyll Gollum works as a Jekyll plugin.
 
@@ -47,7 +47,7 @@ In the mean time you can still set `future: false` and date your drafts
 far in the future.
 
 
-## Tips
+## [Tips](#tips)
 
 ### Is it possible to customize files individually?
 
@@ -77,11 +77,11 @@ Gollum (because in most cases it passes the chore off to Gollum).
 Bottom line? Use Jekyll Gollum to gain all the benefits of Jekyll. If you
 don't need those, Smeagol may be a better choice.
 
-## Copyrights
+## [Copyrights](#copyrights)
 
 Copyright (c) 2013 Rubyworks
 
-Hyde is open-source software distributed under the BSD-2-Clause license.
+Jekyll-Gollum is open-source software distributed under the [BSD-2-Clause license](LICENSE.txt).
 
 See LICENSE.txt for details.
 
