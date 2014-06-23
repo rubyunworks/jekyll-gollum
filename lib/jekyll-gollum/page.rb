@@ -16,9 +16,15 @@ module Jekyll
       def read_yaml(base, name)
         begin
           text = File.read(File.join(base, name))
-          data = (site.config['transform'] || {})['page_yaml'] || {'layout'=>'default'}
+          data = {'layout'=>'default'}
 
-          if text =~ /<!--\s+---\s*\n(.*?)^-->\s*$\n?/m
+          transfiguraiton = site.config['transform'] || {}
+
+          if yaml = transfiguraiton['page_yaml']
+            data.merge!(yaml)
+          end
+
+          if text =~ /<!--\s+---\s+(.*?)\s+-->\s*$\n?/m
             text.delete($0)
             data.merge!(YAML.safe_load($1))
           end
