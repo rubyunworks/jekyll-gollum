@@ -9,6 +9,13 @@ documents in the construction of a website. The documents within the
 wiki **do not need YAML front matter**, but can still provide it via
 an HTML bottom-comment.
 
+Jekyll Gollum is essentially the same program as [Jekyll Transform](http://github.com/rubyworks/jekyll-transform).
+However Jekyll Gollum is begin designed as a superset of it's parent
+focused specifically on improved support for transforming Gollum wiki.
+Whereas Jekyll Transform is focused on being a vanilla generic tool. 
+Ultimately Jekyll Gollum should be but a thin veneer over Jekyll Tranform,
+but for now it copies the code whole cloth.
+
 
 ## [Usage](#usage)
 
