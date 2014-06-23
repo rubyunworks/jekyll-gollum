@@ -93,7 +93,7 @@ Gollum (because in most cases it passes the chore off to Gollum).
 Bottom line? Use Jekyll Gollum to gain all the benefits of Jekyll. If you
 don't need those, Smeagol may be a better choice.
 
-## Future Plans
+## [Future Plans](#future)
 
 There are couple of issues left to address to make Jekyll and truly good
 means of generating static sites from Gollum wikis. First and foremost is
