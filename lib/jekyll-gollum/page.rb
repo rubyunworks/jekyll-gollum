@@ -24,7 +24,7 @@ module Jekyll
             data.merge!(yaml)
           end
 
-          if text =~ /<!--\s+---\s+(.*?)\s+-->\s*$\n?/m
+          if text =~ /<!---*\ +---\s+(.*?)\s+-*-->\s*$\n?/m
             text.delete($0)
             data.merge!(YAML.safe_load($1))
           end
