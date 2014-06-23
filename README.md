@@ -17,6 +17,15 @@ Ultimately Jekyll Gollum should be but a thin veneer over Jekyll Tranform,
 but for now it copies the code whole cloth.
 
 
+## [Notes](#notes)
+
+I was very hopeful that Jykell 2.0 would make this project all but obsolete.
+Unfortunately, no such luck. While Jekyll 2 has added front matter defaults
+to the configuration, there still doesn't appear to be any means
+of allowing posts and pages to coexist in the same folder. Nor am I sure
+that a file without any frontmatter will be processed by Jekyll at all.
+
+
 ## [Usage](#usage)
 
 Jekyll Gollum works as a Jekyll plugin.
@@ -83,6 +92,20 @@ that Gollum supports and more faithly renders them in the same manner as
 Gollum (because in most cases it passes the chore off to Gollum).
 Bottom line? Use Jekyll Gollum to gain all the benefits of Jekyll. If you
 don't need those, Smeagol may be a better choice.
+
+## Future Plans
+
+There are couple of issues left to address to make Jekyll and truly good
+means of generating static sites from Gollum wikis. First and foremost is
+support for the markup formats that Gollum supports. There are already a 
+few Jekyll plugins that exist to help in this regard. We should just be 
+able to add them as a depenedncies and (except for configuration) we should
+be good to go.
+
+Another pressing issue is support for drafts. Jekyll expects drafts to be 
+int the `_drafts` directly. But obviously, coming from a Gollum site we 
+don't have the option.
+
 
 ## [Copyrights](#copyrights)
 
