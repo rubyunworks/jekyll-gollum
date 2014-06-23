@@ -18,9 +18,9 @@ module Jekyll
           text = File.read(File.join(base, name))
           data = {'layout'=>'default'}
 
-          transfiguraiton = site.config['transform'] || {}
+          conf = site.config['gollum'] || {}
 
-          if yaml = transfiguraiton['page_yaml']
+          if yaml = conf['page_yaml']
             data.merge!(yaml)
           end
 
