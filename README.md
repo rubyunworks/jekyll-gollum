@@ -1,3 +1,7 @@
+**THIS PROJECT IS DEPRECATED!**
+
+Instead just use [Jekyll Transform](http://rubyworks.github.com/jekyll-transform) and require "jekyll-transfrom/gollum".
+
 # [Jekyll Gollum](http://rubyworks.github.com/jekyll-gollum)
 
 **Transform your Gollum Wiki into a Jekyll Website!**
